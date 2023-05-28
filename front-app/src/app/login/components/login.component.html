@@ -1,0 +1,13 @@
+<h1>login de usuario</h1>
+
+<div>
+  <form [formGroup]="checkoutForm" (ngSubmit)="signIn()">
+    <label for="username">Usuario:</label>
+    <input type="text" id="username" formControlName="username">
+
+    <label for="password">Clave:</label>
+    <input type="password" formControlName="password">
+
+    <input type="button" value="Ingresar" (click)="signIn()">
+  </form>
+</div>
